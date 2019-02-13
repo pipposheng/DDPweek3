@@ -1,0 +1,21 @@
+---
+title: "DDP Week3 Assignment"
+author: "Biqing Sheng"
+date: "2/12/2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## MPG plot from mtcars data set.
+
+```{r plot, message=FALSE}
+library(plotly)
+plot_ly(data = mtcars, x= ~wt, y = ~hp, z = ~mpg, type = "scatter3d", color = ~factor(cyl))
+```
+
+## Thank You!
+
+
